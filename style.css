@@ -2,6 +2,10 @@
     font-family: sea-weed;
     src: url(./media/SeaweedScript-Regular.ttf);
 }
+@font-face {
+    font-family: Dokoto;
+    src: url(./media/EastSeaDokdo-Regular.ttf);
+}
 
 body {
     margin: 0;
@@ -11,44 +15,69 @@ body {
 #page {
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
+    min-width: fit-content;
 }
 
 .left-container {
     font-family: sea-weed, sans-serif;
     flex: 1;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.3px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    text-align: center;
-    letter-spacing: 0.10rem;
     display: flex;
-    font-size: clamp(4rem, 12vw , 6rem);
-    background-color: blue;
+    text-align: center;
     align-items: center;
+    background-image: url(./media/shifaz-abdul-hakkim-NZTsrLSgNv0-unsplash.jpg);
+    background-size: 100% 100%;
+    border: 0.5rem ridge rgba(0, 0, 0, 0.7);
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
     flex: 3 1 0;
+    border: 0.5rem ridge rgba(0, 0, 0, 0.7);
 }
 
 .descrizione {
-    height: clamp(30vh , 30vh , 30vh);
-    background-color: sandybrown;
+    padding-left: 1rem;
+    margin: 2rem;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 248, 255, 0.6);
+    border-radius: 32px;
+}
+
+.form-sin {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 3 1 0;
+    gap: 0.7rem;
+    align-items: center;
 }
 .modale {
-    height: clamp(40vh , 40vh , 40vh);
+    display: flex;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    border-radius: 32px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-flow: row wrap;
+    padding: 3rem;
+    flex: 3 1 0;
+    gap: 25px;
+    min-width: 30rem;
+    max-width: 50rem;
+    justify-content: space-evenly;
+    align-self: center;
 }
-.areasubmit {
-    height: clamp(30vh , 30vh , 30vh);
-    background-color: aquamarine;
+
+.areaInfo {
+    justify-content: center;
+    background-image: url(./media/Sand.svg);
+    align-items: start;
+    display: flex;
+    flex: 1 1 0;
 }
 
 
@@ -58,10 +87,132 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 5px;
     letter-spacing: 0.10rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
 }
 
 .input {
     display: flex;
+    width: 45%;
+    gap: 6px;
+    flex-flow: column wrap;
 }
+
+.title > p {
+    font-size: clamp(4rem, 5vw , 6rem);
+    margin: 0px;
+}
+
+form {
+    flex: 6 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form > p {
+    font-family: 'sea-weed';
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    background-color: rgba(240, 248, 255, 0.6);
+    margin: 2rem;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.descrizione > p {
+    font-family: sea-weed, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.footer {
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    gap: 5px;
+    flex: 1;
+    background-color: #0000007a;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: mediumblue;
+}
+
+.form-sin > p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    margin-top: 0px;
+}
+
+a img {
+    height: 2.1rem;
+    width: 2rem;
+    filter:brightness(0) invert(1);
+}
+
+.nome-github {
+    color: rgb(255, 255, 255);
+}
+
+.title > img {
+    height: clamp(4rem, 5vw , 6rem)
+}
+
+.right-container:nth-child(2) {
+    background-image: url(./media/mohamed-nashah-GIsFHopvbPA-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+button {
+    font-family: serif;
+    font-size: 2rem;
+    width: 15vw;
+    min-width: 14rem;
+    border: 2px solid rgb(255 220 91);
+    border-radius: 16px;
+    background-color: #f0f8ff40;
+}
+
+
+button:hover {
+    color: rgb(255 255 255);
+    background-image: url(./media/Sand.svg);
+}
+
+input {
+    font-size: 1.0rem;
+    background: #00000075;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    padding: 10px;
+}
+
+input:focus {
+    border: 2px solid black;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+label {
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-style: italic;
+    font-size: 1em;
+    color: rgba(245, 255, 250, 0.466);
+    padding: 5px;
+  }

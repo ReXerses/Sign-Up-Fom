@@ -7,36 +7,50 @@
     <title>Sign-Up-Form</title>
     <link rel="Stylesheet" href="style.css">
     <link rel="font" href="./media/SeaweedScript-Regular.ttf">
+    <link rel="font" href="./media/EastSeaDokdo-Regular.ttf">
 </head>
 <body>
     <div id="page">
         <div class="left-container">
-            <span class="title">Scuba D.S.</span>
+            <div class="title">
+                <img src="./media/captains_wheel.svg" alt="Logo">
+                <p>SCUBA</p>
+            </div>
         </div>
         <div class="right-container">
-            <div class="descrizione"></div>
-            <div class="modale">
-                <form action="#">
-                    <p>Let's Do it!</p>
+            <div class="descrizione">
+                <p>Questo non e` un vero servizio! Lorem ipsum dolor sit amet consectetur,</p>
+                <p>adipisicing elit. Commodi consequat!</p>
+                
+            </div>
+            <form action="#">
+            <p>IMMERGITI! <img src="./media/captains_wheel.svg" alt="Logo" height="36px"> REGISTRATI ORA!</p>
+            <div class="form-sin">
+
+                <div class="modale">
+                
+                
+                    
                     <div class="input">
                         <label for="first_name">*Nome:</label>
-                        <input type="text" id="first_name" name="first_name" placeholder="Mario" required>
+                        <input type="text" id="first_name" name="first_name" placeholder="Mario" required autocomplete="off">
+                    </div>
 
+                    <div class="input">
                         <label for="last_name">*Cognome:</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="Mario" required>
-
+                        <input type="text" id="last_name" name="last_name" placeholder="Rossi" required autocomplete="off">
                     </div>
 
                     
 
                     <div class="input">
                         <label for="user_email">*Email:</label>
-                        <input type="email" id="user_email" name="user_email" placeholder="esempioemail@blabla.com" required>
+                        <input type="email" id="user_email" name="user_email" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="esempioemail@blabla.com" required autocomplete="off">
                     </div>
 
                     <div class="input">
                         <label for="cellulare">Numero Cellulare:</label>
-                        <input type="tel" id="cellulare" name="cellulare" pattern="[0-9]{10}">
+                        <input type="tel" id="cellulare" name="cellulare" pattern="[0-9]{10}" maxlength="10" autocomplete="off" title="Ten Numbers">
                     </div>
 
                     <div class="input">
@@ -48,9 +62,24 @@
                         <label for="confirm_password">*Conferma Password:</label>
                         <input type="password" id="confirm_password" name="confirm_password" placeholder=" " required>
                     </div>
-                </form>
+                
             </div>
-            <div class="areasubmit"></div>
+            <button type="submit">REGISTRATI</button>
+            <p>Hai già un Account? <a href="">Log In</a></p>
+        </div>
+            </form>
+
+
+            <div class="areaInfo">
+                <div class="footer">
+
+                    <a href="https://github.com/ReXerses">
+                        <img src="./media/github.svg" alt="Personal Github link">
+                    </a>
+
+                    <a class='nome-github' href="https://github.com/ReXerses">ReXerses</a>    
+                </div>
+            </div>
         </div>
     </div>
 </body>
